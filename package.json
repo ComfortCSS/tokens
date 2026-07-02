@@ -1,0 +1,49 @@
+{
+  "name": "@comfortcss/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens (CSS variables) for the Ultra CSS ecosystem – colors, typography, spacing, and more.",
+  "main": "dist/tokens.min.css",
+  "style": "dist/tokens.min.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComfortCSS/tokens.git"
+  },
+  "scripts": {
+    "build": "npx lightningcss --minify --bundle src/index.css -o dist/tokens.min.css",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "css",
+    "tokens",
+    "normalize",
+    "modern",
+    "accessible",
+    "lightweight"
+  ],
+  "author": "ComfortCSS",
+  "license": "MIT",
+  "devDependencies": {
+    "lightningcss": "^1.32.0",
+    "lightningcss-cli": "^1.32.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "style": "./dist/tokens.min.css",
+      "default": "./dist/tokens.min.css"
+    },
+    "./tokens": {
+      "style": "./dist/tokens.min.css",
+      "default": "./dist/tokens.min.css"
+    },
+    "./modules/*": "./src/*",
+    "./package.json": "./package.json"
+  }
+}

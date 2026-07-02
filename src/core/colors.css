@@ -1,0 +1,156 @@
+/**
+ * @package @comfortcss/tokens
+ * @subpackage colors
+ * @since 1.0.0
+ *
+ * @section colors
+ * @description
+ *   Color system with semantic, neutral, and system colors.
+ *   Animatable colors are registered with @property.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@property
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#system_colors
+ */
+@layer tokens {
+    @property --color-primary {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #2563eb;
+    }
+    @property --color-secondary {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #7c3aed;
+    }
+    @property --color-success {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #22c55e;
+    }
+    @property --color-warning {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #eab308;
+    }
+    @property --color-danger {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #ef4444;
+    }
+    @property --color-info {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #06b6d4;
+    }
+    @property --color-bg {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #ffffff;
+    }
+    @property --color-text {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #1f2937;
+    }
+
+    :root {
+        /* Primary palette */
+        --color-primary: #2563eb;
+        --color-primary-dark: #1d4ed8;
+        --color-primary-light: #60a5fa;
+
+        --color-secondary: #7c3aed;
+        --color-secondary-dark: #6d28d9;
+        --color-secondary-light: #a78bfa;
+
+        /* Semantic colors */
+        --color-success: #22c55e;
+        --color-success-dark: #16a34a;
+        --color-success-light: #86efac;
+
+        --color-warning: #eab308;
+        --color-warning-dark: #ca8a04;
+        --color-warning-light: #fde047;
+
+        --color-danger: #ef4444;
+        --color-danger-dark: #dc2626;
+        --color-danger-light: #fca5a5;
+
+        --color-info: #06b6d4;
+        --color-info-dark: #0891b2;
+        --color-info-light: #67e8f9;
+
+        /* Neutral scale (gray) */
+        --color-neutral-50:  #f9fafb;
+        --color-neutral-100: #f3f4f6;
+        --color-neutral-200: #e5e7eb;
+        --color-neutral-300: #d1d5db;
+        --color-neutral-400: #9ca3af;
+        --color-neutral-500: #6b7280;
+        --color-neutral-600: #4b5563;
+        --color-neutral-700: #374151;
+        --color-neutral-800: #1f2937;
+        --color-neutral-900: #111827;
+
+        /* System colors (OS‑aware) */
+        --color-canvas: Canvas;
+        --color-canvas-text: CanvasText;
+        --color-highlight: Highlight;
+        --color-highlight-text: HighlightText;
+        --color-field: Field;
+        --color-field-text: FieldText;
+        --color-button: ButtonFace;
+        --color-button-text: ButtonText;
+
+        /* Semantic aliases (pointing to system or neutral) */
+        --color-text: var(--color-neutral-800);
+        --color-text-muted: var(--color-neutral-500);
+        --color-text-inverse: var(--color-neutral-50);
+        --color-bg: var(--color-neutral-50);
+        --color-bg-card: #ffffff;
+        --color-border: var(--color-neutral-200);
+        --color-border-focus: var(--color-primary);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+        --color-primary: #3b82f6;
+        --color-primary-dark: #60a5fa;
+        --color-primary-light: #93c5fd;
+        --color-secondary: #8b5cf6;
+        --color-secondary-dark: #a78bfa;
+        --color-secondary-light: #c4b5fd;
+        --color-success: #34d399;
+        --color-success-dark: #6ee7b7;
+        --color-success-light: #a7f3d0;
+        --color-warning: #fbbf24;
+        --color-warning-dark: #fcd34d;
+        --color-warning-light: #fde68a;
+        --color-danger: #f87171;
+        --color-danger-dark: #fca5a5;
+        --color-danger-light: #fecaca;
+        --color-info: #22d3ee;
+        --color-info-dark: #67e8f9;
+        --color-info-light: #a5f3fc;
+
+        --color-neutral-50:  #18181b;
+        --color-neutral-100: #27272a;
+        --color-neutral-200: #3f3f46;
+        --color-neutral-300: #52525b;
+        --color-neutral-400: #71717a;
+        --color-neutral-500: #a1a1aa;
+        --color-neutral-600: #d4d4d8;
+        --color-neutral-700: #e4e4e7;
+        --color-neutral-800: #f4f4f5;
+        --color-neutral-900: #fafafa;
+
+        --color-text: var(--color-neutral-100);
+        --color-text-muted: var(--color-neutral-400);
+        --color-text-inverse: var(--color-neutral-900);
+        --color-bg: var(--color-neutral-900);
+        --color-bg-card: var(--color-neutral-800);
+        --color-border: var(--color-neutral-700);
+        }
+    }
+}

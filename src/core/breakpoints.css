@@ -1,0 +1,19 @@
+/**
+ * @package @comfortcss/tokens
+ * @subpackage breakpoints
+ * @since 1.0.0
+ *
+ * @section breakpoints
+ * @description
+ *   Responsive breakpoints for use in media queries and container queries.
+ */
+
+@layer tokens {
+  :root {
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+  }
+}
