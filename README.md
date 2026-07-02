@@ -7,3 +7,7 @@ This package provides a comprehensive set of CSS custom properties (variables) f
 ```bash
 npm install @comfortcss/tokens
 ```
+
+## License
+
+[MIT](LICENSE)
