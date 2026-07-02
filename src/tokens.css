@@ -1,0 +1,15 @@
+/**
+ * @package @comfortcss/tokens
+ * @version 0.1.0
+ *
+ * @description
+ *   Aggregates all design token modules. Import this file to get all variables.
+ */
+
+@import 'core/colors.css';
+@import 'core/typography.css';
+@import 'core/spacing.css';
+@import 'core/radii.css';
+@import 'core/shadows.css';
+@import 'core/breakpoints.css';
+@import 'core/animations.css';

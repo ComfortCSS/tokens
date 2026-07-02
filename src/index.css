@@ -1,0 +1,11 @@
+/**
+ * @package @comfortcss/tokens
+ * @version 0.1.0
+ * @author ComfortCSS
+ * @license MIT
+ *
+ * @description
+ *   Entry point for the `@comfortcss/tokens` package. This file imports all design tokens.
+ *   Users can either import this file directly or import individual modules.
+ */
+@import 'tokens.css';
