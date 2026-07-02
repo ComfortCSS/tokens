@@ -5,7 +5,7 @@ This package provides a comprehensive set of CSS custom properties (variables) f
 ## Installation
 
 ```bash
-npm install @comfortcss/tokens
+npm install @comfortcss/tokens@1.X.X
 ```
 
 ## License
