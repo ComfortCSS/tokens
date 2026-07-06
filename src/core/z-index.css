@@ -1,0 +1,35 @@
+/**
+ * @package @comfortcss/tokens
+ * @subpackage z-index
+ * @since 1.1.0
+ *
+ * @section z-index
+ * @description
+ *   Z-index values for stacking context management.
+ *
+ */
+
+@layer tokens {
+    :root {
+        /* Numeric scale (0–1000) */
+        --z-0: 0;
+        --z-10: 10;
+        --z-20: 20;
+        --z-30: 30;
+        --z-40: 40;
+        --z-50: 50;
+        --z-auto: auto;
+
+        /* Semantic layers */
+        --z-dropdown: 100;
+        --z-sticky: 200;
+        --z-fixed: 300;
+        --z-modal-backdrop: 400;
+        --z-modal: 500;
+        --z-popover: 600;
+        --z-tooltip: 700;
+        --z-toast: 800;
+        --z-loading: 900;
+        --z-max: 999;
+    }
+}
