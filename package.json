@@ -1,6 +1,6 @@
 {
   "name": "@comfortcss/tokens",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design tokens (CSS variables) for the Ultra CSS ecosystem – colors, typography, spacing, and more.",
   "main": "dist/tokens.min.css",
   "style": "dist/tokens.min.css",

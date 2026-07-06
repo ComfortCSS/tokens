@@ -1,7 +1,7 @@
 /**
  * @package @comfortcss/tokens
  * @subpackage spacing
- * @since 1.0.0
+ * @since 1.1.0
  *
  * @section spacing
  * @description
@@ -37,5 +37,36 @@
     --space-16: calc(var(--spacing-unit) * 16);
     --space-20: calc(var(--spacing-unit) * 20);
     --space-24: calc(var(--spacing-unit) * 24);
+
+    /* Negative spacings (for micro-adjustments) */
+    --space-n-0-5: calc(var(--space-0-5) * -1);
+    --space-n-1: calc(var(--space-1) * -1);
+    --space-n-1-5: calc(var(--space-1-5) * -1);
+    --space-n-2: calc(var(--space-2) * -1);
+    --space-n-2-5: calc(var(--space-2-5) * -1);
+    --space-n-3: calc(var(--space-3) * -1);
+    --space-n-4: calc(var(--space-4) * -1);
+    --space-n-5: calc(var(--space-5) * -1);
+    --space-n-6: calc(var(--space-6) * -1);
+    --space-n-8: calc(var(--space-8) * -1);
+    --space-n-10: calc(var(--space-10) * -1);
+    --space-n-12: calc(var(--space-12) * -1);
+    --space-n-16: calc(var(--space-16) * -1);
+
+    /* Gap scale (same as space, but semantic) */
+    --gap-0: var(--space-0);
+    --gap-0-5: var(--space-0-5);
+    --gap-1: var(--space-1);
+    --gap-1-5: var(--space-1-5);
+    --gap-2: var(--space-2);
+    --gap-2-5: var(--space-2-5);
+    --gap-3: var(--space-3);
+    --gap-4: var(--space-4);
+    --gap-5: var(--space-5);
+    --gap-6: var(--space-6);
+    --gap-8: var(--space-8);
+    --gap-10: var(--space-10);
+    --gap-12: var(--space-12);
+    --gap-16: var(--space-16);
   }
 }
